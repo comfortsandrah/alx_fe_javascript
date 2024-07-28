@@ -42,9 +42,13 @@ document.addEventListener("DOMContentLoaded", function () {
             alert("Please enter a quote and a category.");
         }
     }
+function createAddQuoteForm(){
+    const formHtml = ""
+}
 
     // Show a random quote when the page loads
     showRandomQuote();
+    createAddQuoteForm();
 
     // Event listeners
     newQuoteBtn.addEventListener("click", showRandomQuote);
