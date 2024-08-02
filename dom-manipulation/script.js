@@ -3,11 +3,17 @@ document.addEventListener("DOMContentLoaded", function () {
     const newQuoteBtn = document.getElementById("newQuote");
     const addQuoteBtn = document.getElementById("add-quote");
 
+    
     // If no quotes array in the local storage set it to an empty array
     if (!localStorage.getItem("quotes")) {
         // Set the localStorage item quotes to an empty array
         localStorage.setItem("quotes", JSON.stringify([]));
+    }if (sessionStorage.getItem("quotes")) {
+        
     }
+    const lastViewedQuote = sessionStorage.getItem("lastViewedQuote");
+
+    
 
     // Get the quotes from the local storage
     const quotes = JSON.parse(localStorage.getItem("quotes")) || [];
@@ -42,9 +48,9 @@ document.addEventListener("DOMContentLoaded", function () {
             alert("Please enter a quote and a category.");
         }
     }
-function createAddQuoteForm(){
-    const formHtml = ""
-}
+    function createAddQuoteForm() {
+        const formHtml = ""
+    }
 
     // Show a random quote when the page loads
     showRandomQuote();
