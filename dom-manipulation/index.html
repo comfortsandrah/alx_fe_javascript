@@ -24,6 +24,12 @@
         onchange="importFromJsonFile(event)"
       />
     </div>
+    <div>
+      <select id="categoryFilter" onchange= "filterQuotes()">
+        <option id="option" value="all">All Categories</option>
+        <!-- Dynamically populated categories -->
+      </select>
+    </div>
     <button id="exportBtn">Export Quotes</button>
     <div id="quoteDisplay"></div>
     <button id="newQuote">Show New Quote</button>
