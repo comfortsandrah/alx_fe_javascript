@@ -72,7 +72,7 @@ document.addEventListener("DOMContentLoaded", function () {
     }
     function populateCategories() {
         const categories = new Set([]);
-        quotes.forEach(({ category }) => {
+        quotes.map(({ category }) => {
             categories.add(category);
         });
         for (const category of categories.values()) {
